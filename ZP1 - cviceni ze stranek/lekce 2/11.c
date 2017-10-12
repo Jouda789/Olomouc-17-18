@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* 11. Napište program, kterı naète datum narození ve tvaru DDMMYYYY jako èíslo, a
-vypište jej jako datum. Napø. po naètení èísla 13122002 vypište
+/* 11. Napiste program, kterÃ½ nacte datum narozeni ve tvaru DDMMYYYY jako cislo, a
+vypiste jej jako datum. Napr. po nacteni cisla 13122002 vypiste
 13. 12. 2002 */
 
 int main(){

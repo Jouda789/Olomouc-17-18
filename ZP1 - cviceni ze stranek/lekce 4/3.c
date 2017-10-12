@@ -1,4 +1,4 @@
-/* 3. Napište program, kterı spoèítá souèet všech dvoucifernıch lichıch èísel. */
+/* 3. NapiÅ¡te program, kterÃ½ spoÄÃ­tÃ¡ souÄet vÅ¡ech dvoucifernÃ½ch lichÃ½ch ÄÃ­sel. */
 
 #include<stdio.h>
 #include<stdlib.h>

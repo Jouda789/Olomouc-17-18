@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* 10. Naètìte ze vstupu tøíciferné èíslo a poté vypište jeho první a poslední èíslici. */
+/* 10. NaÄtÄ›te ze vstupu tÅ™Ã­cifernÃ© ÄÃ­slo a potÃ© vypiÅ¡te jeho prvnÃ­ a poslednÃ­ ÄÃ­slici. */
 
 int main(){
     int i;

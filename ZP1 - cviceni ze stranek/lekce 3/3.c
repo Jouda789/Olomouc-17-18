@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* 3. Napište program, kterı rozhodne, zdali je danı rok pøestupnı. */
+/* 3. NapiÅ¡te program, kterÃ½ rozhodne, zda-li je danÃ½ rok pÅ™estupnÃ½. */
 
     int main()
         {

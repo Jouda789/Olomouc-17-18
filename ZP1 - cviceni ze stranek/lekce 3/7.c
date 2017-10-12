@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-/* 7. Napište program, kterı naète ze vstupu èíslici a vypíše ji slovnì. */
+/* 7. NapiÅ¡te program, kterÃ½ naÄte ze vstupu ÄÃ­slici a vypÃ­Å¡e ji slovnÄ›. */
 
 int main() {
    int cislice;

@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #define VELIKOST 10
 
-/* 6. Napište program, kterı seète všechna lichá èísla z pole. */
+/* 6. NapiÅ¡te program, kterÃ½ seÄte vÅ¡echna lichÃ¡ ÄÃ­sla z pole. */
 
 int main(){
 	int a[VELIKOST] = {1,2,3,4,5,6,7,8,9,10};

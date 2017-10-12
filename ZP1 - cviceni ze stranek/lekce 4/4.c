@@ -1,4 +1,4 @@
-/* 4. Vypište všechna ètyøciferná èísla, jejich souèet èíslic je dìlitelnı 7. */
+/* 4. VypiÅ¡te vÅ¡echna ÄtyÅ™cifernÃ¡ ÄÃ­sla, jejichÅ¾ souÄet ÄÃ­slic je dÄ›litelnÃ½ 7. */
 
 #include<stdio.h>
 #include<stdlib.h>

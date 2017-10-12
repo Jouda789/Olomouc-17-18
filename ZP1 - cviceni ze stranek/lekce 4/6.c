@@ -2,9 +2,9 @@
 #include<stdlib.h>
 #define MAX 500
 
-/* 6. Napište program, kterı aproximuje hodnotu èísla pí pomocí Gregory-Leibnizovy aproximace jako souèet prvních 100 èlenù sumy (viz wiki). */
+/* 6. NapiÅ¡te program, kterÃ½ aproximuje hodnotu ÄÃ­sla pÃ­ pomocÃ­ Gregory-Leibnizovy aproximace jako souÄet prvnÃ­ch 100 ÄlenÅ¯ sumy (viz wiki). */
 
-/*************** POZOR, NÌCO JE TU ŠPATNÌ, vypisuje to 1,00000 místo pí ***********************************/
+/*************** POZOR, NÄšCO JE TU Å PATNÄš, vypisuje to 1,00000 mÃ­sto pÃ­ ***********************************/
 
 int main() {
   int i, pomoc, index;

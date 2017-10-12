@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<math.h>
 
-/* 4. Naètìte ze vstupu souøadnice bodu v na euklidovské ploše. Vypište, do kterého kvadrantu bod patøí (nebo na které ose leí). */
+/* 4. NaÄtÄ›te ze vstupu souÅ™adnice bodu v na euklidovskÃ© ploÅ¡e. VypiÅ¡te, do kterÃ©ho kvadrantu bod patÅ™Ã­ (nebo na kterÃ© ose leÅ¾Ã­). */
 
 int main() {
    int x,y;

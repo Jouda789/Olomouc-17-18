@@ -1,9 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-/* 6. Ze vstupu naètìte délky stran trojúhelníka. Rozhodnìte, jestli se trojúhelník s danımi
-delkami stran existuje. Pokud ano, rozhodnìte, jestli je pravoúhlı, rovnostrannı nebo
-obyèejnı. */
+/* 6. Ze vstupu naÄtÄ›te dÃ©lky stran trojÃºhelnÃ­ka. RozhodnÄ›te, jestli se trojÃºhelnÃ­k s danÃ½mi
+delkami stran existuje. Pokud ano, rozhodnÄ›te, jestli je pravoÃºhlÃ½, rovnostrannÃ½ nebo
+obyÄejnÃ½. */
 
 int main() {
    int a,b,c;

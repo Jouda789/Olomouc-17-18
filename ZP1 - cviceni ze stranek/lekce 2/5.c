@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* 5. Napište program, kterı vypoète hodnotu matematického vırazu 3/2 + 12 - (5^3 -2)/6 a vypíše ji na obrazovku. */
+/* 5. NapiÅ¡te program, kterÃ½ vypoÄte hodnotu matematickÃ©ho vÃ½razu 3/2 + 12 - (5^3 -2)/6 a vypÃ­Å¡e ji na obrazovku. */
 
 int main(){
 

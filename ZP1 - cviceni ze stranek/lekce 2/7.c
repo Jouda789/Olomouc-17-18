@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* 7. Napište program, kterı spoèítá prùmìr èísel 1, 2, 3, 4, 50, 100, 1002.14 a vypíše jej na
+/* 7. NapiÅ¡te program, kterÃ½ spoÄÃ­tÃ¡ prÅ¯mÄ›r ÄÃ­sel 1, 2, 3, 4, 50, 100, 1002.14 a vypÃ­Å¡e jej na
 obrazovku. */
 
 int main(){

@@ -1,9 +1,9 @@
-/* 1. Napište program, kterı naète celá èísla a a b a poté
-a) vypíše prvních a násobkù èísla b,
-b) vypoèítá a-tou mocninu èísla b,
-c) vypoèítá a-té Fibonacciho èíslo,
-d) urèí, kolik èíslic má èíslo a,
-e) seète všechna celá èísla vìtší ne a a menší ne b. */
+/* 1. NapiÅ¡te program, kterÃ½ naÄte celÃ¡ ÄÃ­sla a a b a potÃ©
+a) vypÃ­Å¡e prvnÃ­ch a nÃ¡sobkÅ¯ ÄÃ­sla b,
+b) vypoÄÃ­tÃ¡ a-tou mocninu ÄÃ­sla b,
+c) vypoÄÃ­tÃ¡ a-tÃ© Fibonacciho ÄÃ­slo,
+d) urÄÃ­, kolik ÄÃ­slic mÃ¡ ÄÃ­slo a,
+e) seÄte vÅ¡echna celÃ¡ ÄÃ­sla vÄ›tÅ¡Ã­ neÅ¾ a a menÅ¡Ã­ neÅ¾ b. */
 
 #include<stdio.h>
 #include<stdlib.h>

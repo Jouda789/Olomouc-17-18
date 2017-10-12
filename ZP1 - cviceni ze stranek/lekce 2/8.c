@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* 8. Napište program, kterı naète ze vstupu dvì èísla a vypíše jejich souèet, rozdíl a souèin. */
+/* 8. NapiÅ¡te program, kterÃ½ naÄte ze vstupu dvÄ› ÄÃ­sla a vypÃ­Å¡e jejich souÄet, rozdÃ­l a souÄin. */
 
 int main(){
-    int a,b;
+    int a, b;
     scanf("%d %d", &a, &b);
     printf("soucet je %d, rozdil je %d, soucin je %d", a+b,a-b,a * b);
 }

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* 3. Napište program, který vypíše velikosti všech základních typù na vašem poèítaèi. */
+/* 3. Napiste program, ktery vypise velikosti vsech zakladnich typu na vasem pocitaci. */
 
 int main()
 {

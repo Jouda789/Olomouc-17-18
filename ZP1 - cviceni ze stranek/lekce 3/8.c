@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-/* 8. Napište program, kterı rozhodne o známce na základì poètu bodù získanıch v testu. */
+/* 8. NapiÅ¡te program, kterÃ½ rozhodne o znÃ¡mce na zÃ¡kladÄ› poÄtu bodÅ¯ zÃ­skanÃ½ch v testu. */
 
 int main() {
    int body;

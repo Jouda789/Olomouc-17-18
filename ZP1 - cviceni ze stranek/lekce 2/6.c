@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* 6. Napište program, kterı naète stranu ètverce a vypíše jeho obvod a obsah. */
+/* 6. NapiÅ¡te program, kterÃ½ naÄte stranu Ätverce a vypÃ­Å¡e jeho obvod a obsah. */
 
 int main(){
     int strana;

@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-/* 9. Napište program pro urèení poètu a typu (reálné vs. komplexní) øešení kvadratické
+/* 9. NapiÅ¡te program pro urÄenÃ­ poÄtu a typu (reÃ¡lnÃ© vs. komplexnÃ­) Å™eÅ¡enÃ­ kvadratickÃ©
 rovnice ax^2+bx+c=0. */
 
 int main() {

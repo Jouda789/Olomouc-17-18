@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* 9. Napište program, kterı naète velké písmeno, a vypíše jej jako malé písmeno. */
+/* 9. NapiÅ¡te program, kterÃ½ naÄte velkÃ© pÃ­smeno, a vypÃ­Å¡e jej jako malÃ© pÃ­smeno. */
 
 int main(){
     char ch, p;

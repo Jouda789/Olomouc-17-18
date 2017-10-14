@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* 2. Napište program, který načte 3 čísla a poté vypíše nejmenší z nich. */
+/* 2. Napiste program, ktery nacte 3 cisla a pak vypise nejmensi z nich. */
 
 int main(){
     int a,b,c;

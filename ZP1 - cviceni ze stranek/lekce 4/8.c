@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-/* 8. Napište program, který pro èíslo n vypíše trojúhelník podle vzorù v následujících pøíkladech. */
+/* 8. Napiste program, ktery pro cislo n vypise trojuhelnik podle vzoru v nasledujicich prikladech. */
 
 int main() {
 	int vyska;

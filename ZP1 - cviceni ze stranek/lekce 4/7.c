@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-/* 7. Napište program, kterı pro pøirozené èíslo vypíše jeho rozklad na prvoèísla. */
+/* 7. NapiÅ¡te program, kterÃ½ pro pÅ™irozenÃ© ÄÃ­slo vypÃ­Å¡e jeho rozklad na prvoÄÃ­sla. */
 
 int main() {
  int cislo, i = 2, pomoc;

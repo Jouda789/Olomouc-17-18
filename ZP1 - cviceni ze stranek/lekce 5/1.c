@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #define MAX 15
 
-/* 1. Napište program, který vypoète prùmìr pole desetinných èísel. */
+/* 1. Napiste program, ktery vypocte prumer pole desetinnych cisel. */
 
 int main() {
     float a[MAX];

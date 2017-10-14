@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #define VELIKOST 10
 
-/* 6. Napište program, který sečte všechna lichá čísla z pole. */
+/* 6. Napiste program, ktery secte vsechna licha cisla z pole. */
 
 int main(){
 	int a[VELIKOST] = {1,2,3,4,5,6,7,8,9,10};

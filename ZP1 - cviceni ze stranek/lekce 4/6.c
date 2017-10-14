@@ -1,20 +1,18 @@
 #include<stdio.h>
 #include<stdlib.h>
-#define MAX 500
+#define MAX 500000000
 
-/* 6. Napište program, který aproximuje hodnotu čísla pí pomocí Gregory-Leibnizovy aproximace jako součet prvních 100 členů sumy (viz wiki). */
-
-/*************** POZOR, NĚCO JE TU ŠPATNĚ, vypisuje to 1,00000 místo pí ***********************************/
+/* 6. Napiste program, ktery aproximuje hodnotu cisla pi pomoci Gregory-Leibnizovy aproximace jako soucet prvnich 100 clenu sumy ... (pozor, suma dava ctvrtinu pi) */
 
 int main() {
   int i, pomoc, index;
-  double suma;
+  float suma;
   suma = 0;
   pomoc = 0;
   for (i=0; i <= MAX; i++){
-  	if ((pomoc % 2) == 0) {index = 1;} else {index = -1;}
-  	pomoc++;
-  	suma = suma + (index  / (2*i + 1));  	
+      if ((pomoc % 2) == 0) index = 1; else index = -1;
+      pomoc++;
+      suma += (float) index/(2*i + 1);      
   }   
-  printf("%f", suma);
+  printf("%.16f", 4*suma);
 }

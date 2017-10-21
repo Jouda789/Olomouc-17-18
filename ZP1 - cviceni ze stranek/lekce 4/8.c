@@ -5,7 +5,7 @@
 
 int main() {
 	int vyska;
- 	printf("Zadejte vysku trojuhleniku: ");
+ 	printf("Zadejte vysku trojuhelniku: \n");
 	scanf("%d", &vyska);
 	int i, j, pom, k;
 	pom = 1;

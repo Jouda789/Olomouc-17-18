@@ -19,3 +19,20 @@ int main() {
         printf("%d ", i);}
     }
 }
+
+//nebo
+
+int main() {
+   int i, soucet = 0, pom, pom2;
+
+    for (i=1000; i<10000; i++){
+        pom = i;
+        while (pom > 0){
+            pom2 = pom % 10;
+            soucet += pom2;
+            pom /= 10
+        }
+        if ((soucet % 7) == 0){
+        printf("%d ", i);}
+    }
+}

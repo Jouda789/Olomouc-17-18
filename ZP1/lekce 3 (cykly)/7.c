@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-/* 7. Napište program, který pro přirozené číslo vypíše jeho rozklad na prvočísla. */
+/* 7. Napiste program, ktery pro prirozene cislo vypise jeho rozklad na prvocisla. */
 
 int main() {
  int cislo, i = 2, pomoc;

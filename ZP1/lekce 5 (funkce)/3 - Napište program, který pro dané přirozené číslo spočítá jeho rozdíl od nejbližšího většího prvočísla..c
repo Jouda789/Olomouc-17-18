@@ -2,13 +2,11 @@
 #include<stdlib.h>
 #include<math.h>
 
-/* 3. Napište program, kterı pro dané pøirozené èíslo spoèítá jeho rozdíl od nejblišího vìtšího prvoèísla. */
-
-/* neco je tu spatne... */ 
+/* 3. NapiÅ¡te program, kterÃ½ pro danÃ© pÅ™irozenÃ© ÄÃ­slo spoÄÃ­tÃ¡ jeho rozdÃ­l od nejbliÅ¾Å¡Ã­ho vÄ›tÅ¡Ã­ho prvoÄÃ­sla. */
 
 int JePr(int a){
     int j;
-    int g = sqrt(j);
+    int g = sqrt(a);
     if ((a == 1) || (a % 2 == 0)) {return 0;}
     for(j=3;j<g;j += 2){
         if((a % j) == 0) {return 0; break;}       
@@ -16,17 +14,15 @@ int JePr(int a){
     return 1;   
 }
 
-int NajdiPr(int c){
-    int i=c+1;
-    
-	while(JePr(i) == 0){		
-		i++;
-	}
-
+int NajdiPr(int c)
+{
+    int i=c+1;   
+	while(JePr(i) == 0) i++;	
     return i;    
 }
 
-int main(){
+int main()
+{
    int cislo, pr;
    scanf("%d", &cislo); 
    pr = NajdiPr(cislo);

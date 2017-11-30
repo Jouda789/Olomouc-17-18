@@ -9,8 +9,9 @@
 int JePr(int a){
     int j;
     int g = sqrt(j);
-    if ((a == 1) || (a % 2 == 0)) {return 0;}
-    for(j=3;j<g;j += 2){
+    if (a == 2) return 1;
+    if ((a == 1) || (a % 2 == 0)) return 0;  
+    for(j=3;j<=g;j++){
         if((a % j) == 0) {return 0; break;}       
     }
     return 1;   

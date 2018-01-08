@@ -6,25 +6,23 @@
 
 int JePr(int a){
     int j;
-<<<<<<< HEAD
     int g = sqrt(j);
     if (a == 2) return 1;
     if ((a == 1) || (a % 2 == 0)) return 0;  
     for(j=3;j<=g;j++){
-=======
-    int g = sqrt(a);
-    if ((a == 1) || (a % 2 == 0)) {return 0;}
-    for(j=3;j<g;j += 2){
->>>>>>> e651070bea416061fac49bbf10005710d470ba6c
-        if((a % j) == 0) {return 0; break;}       
-    }
-    return 1;   
+      int g = sqrt(a);
+      if ((a == 1) || (a % 2 == 0)) {return 0;}
+       for(j=3;j<g;j += 2){
+         if((a % j) == 0) {return 0; break;}       
+       }
+      return 1;   
+    } 
 }
 
 int NajdiPr(int c)
 {
     int i=c+1;   
-	while(JePr(i) == 0) i++;	
+  while(JePr(i) == 0) i++;  
     return i;    
 }
 

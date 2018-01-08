@@ -3,26 +3,20 @@
 #include<math.h>
 
 /* 3. Napište program, který pro dané přirozené číslo spočítá jeho rozdíl od nejbližšího většího prvočísla. */
-
 int JePr(int a){
     int j;
-    int g = sqrt(j);
+    int g = sqrt(a);
     if (a == 2) return 1;
     if ((a == 1) || (a % 2 == 0)) return 0;  
-    for(j=3;j<=g;j++){
-      int g = sqrt(a);
-      if ((a == 1) || (a % 2 == 0)) {return 0;}
-       for(j=3;j<g;j += 2){
-         if((a % j) == 0) {return 0; break;}       
-       }
-      return 1;   
-    } 
+    for(j=3;j<=g;j++)
+        if((a % j) == 0) return 0;        
+    return 1;      
 }
 
 int NajdiPr(int c)
 {
     int i=c+1;   
-  while(JePr(i) == 0) i++;  
+    while(JePr(i) == 0) i++;  
     return i;    
 }
 

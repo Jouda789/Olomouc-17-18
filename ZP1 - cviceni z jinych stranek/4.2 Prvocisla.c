@@ -46,10 +46,10 @@ int prvocislo(int i){
     if (i == 1){return 0;}
     if (i == 2){return 1;}
     if ((i % 2) == 0) { return 0; }
-    for (j=3;j<=a;j++){
-        if ((i % j) == 0) { return 0; }
-        else { return 1; }
+    for (j=3;j<=a;j += 2){
+        if ((i % j) == 0) { return 0; break;}
     }
+    return 1;
 }
 
 int main() {

@@ -44,10 +44,8 @@ int main(int argc, char **argv)
 	return 0;
 }
 
-// Pøidá jméno do stromu
 struct node *add(const char *name, struct node **root)
 {
-	// Pokud koøen neexistuje
 	if(*root==0)
 	{
 		*root = malloc(sizeof(struct node));
@@ -56,16 +54,13 @@ struct node *add(const char *name, struct node **root)
 		(*root)->right = 0;
 	}
 
-	// Pokud je vkládané jméno "vìtší" než koøen
 	else if(strcmp(name, (*root)->name) > 0)
 		add(name, &(*root)->right);
 
-	// Pokud je vkládané jméno "menší" než koøen
 	else if(strcmp(name, (*root)->name) < 0)
 		add(name, &(*root)->left);
 }
 
-// Projde strom a vypíše jména podle abecedy
 void inOrderWalk(struct node **root)
 {
 	if(*root==0)
@@ -76,15 +71,14 @@ void inOrderWalk(struct node **root)
 	inOrderWalk(&(*root)->right);
 }
 
-// Vrátí výšku celého stromu
 int maxHeight(struct node **root)
 {
 	if(*root==0)
-		// Nikoliv 0. Je potøeba výsledek zmenšit, protože
-		//    výška koøene je 0, nikoliv 1.
 		return -1;
 
 	int mLeft = maxHeight(&(*root)->left);
 	int mRight = maxHeight(&(*root)->right);
-	return (mLeft > mRight? mLeft : mRight) + 1;
+	
+	if (mLeft > mRight) return mLeft + 1;
+	else return mRight + 1;
 }

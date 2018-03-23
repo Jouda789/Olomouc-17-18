@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
+//Judita Kindlova
+
 int** Vytvor(int n){
   int i;
   int j;
@@ -31,7 +33,23 @@ void Vypis(int **matice, int n){
     }
     printf("\n");
   }
-  
+}
+
+int** Zkopiruj(int **matice, int n) {
+ int i;
+ int j;
+
+ int **pole2D = (int **)calloc(n /*rady*/, sizeof(int *));
+
+ for (i = 0; i < n; i++)
+	pole2D[i] = (int *)calloc(n /*sloupce*/, sizeof(int));
+
+ for (i = 0; i<n; i++)
+	for (j = 0; j < n; j++) {
+		pole2D[i][j] = matice[i][j];
+	}
+	
+ return pole2D;
 }
 
 void Uvolni(int **matice, int n){
@@ -42,8 +60,6 @@ void Uvolni(int **matice, int n){
     free(matice[i]);
 
   free(matice);
-  
-  
 }
 
 int Reflexivni(int **matice, int n){
@@ -54,8 +70,7 @@ int Reflexivni(int **matice, int n){
     if (matice[i][i] == 0) return 0;    
   }
   
-  return 1;
-  
+  return 1;  
 }
 
 int Antisymetrie(int **matice, int n){
@@ -67,12 +82,9 @@ int Antisymetrie(int **matice, int n){
     
     if (i==j) continue;
     
-    if(matice[i][j] == matice[j][i]) return 0;
-    
-  }
-  
-  return 1; 
-  
+    if(matice[i][j] == matice[j][i]) return 0;    
+  } 
+  return 1;   
 }
 
 int Symetrie(int **matice, int n){
@@ -84,12 +96,9 @@ int Symetrie(int **matice, int n){
     
     if (i==j) continue;
     
-    if(matice[i][j] != matice[j][i]) return 0;
-    
-  }
-  
-  return 1; 
-  
+    if(matice[i][j] != matice[j][i]) return 0;    
+  }  
+  return 1;   
 }
 
 int Tranzitivita(int **matice, int n){
@@ -107,19 +116,51 @@ int Tranzitivita(int **matice, int n){
         
         if(matice[j][k]==1 && matice[i][k]==0) return 0;
         
-      }      
-      
-    }
-    
-  }
-  
-  return 1; 
-  
+      }           
+    }   
+  }  
+  return 1;   
+}
+
+int** Sjednot(int** maticeA, int** maticeB, int n){
+	
+  int i, j;
+
+  int** maticeC;
+
+  maticeC = Zkopiruj(maticeA, n);
+
+  for (i = 0; i < n; i++)
+    for (j = 0; j < n; j++){
+       if (maticeA[i][j] == 0 && maticeB[i][j] == 0) maticeC[i][j] = 0;
+           else maticeC[i][j] = 1;
+     }
+  return maticeC;
+}
+
+int** Vynasob(int** maticeA, int** maticeB, int n){
+
+  int** maticeC;
+
+  maticeC = Zkopiruj(maticeA, n);
+
+  int i, j, k;
+
+  for (i = 0; i < n; i++)
+	for (j = 0; j < n; j++){
+
+		maticeC[i][j] = 0;
+
+		for (k = 0; k < n; k++)
+			maticeC[i][j] = (maticeC[i][j] + maticeA[i][k] * maticeB[k][j])%2;
+
+     }
+  return maticeC;
 }
 
 int main() {
   
- int velikost = 3;
+ int velikost = 4;
   
  srand(time(NULL));  
   
@@ -147,6 +188,35 @@ int main() {
  if(t) printf("Relace je tranzitivni.\n");
   else printf("Relace neni tranzitivni.\n");
    
- Uvolni(matice, velikost); 
+ int **matice2 = Vynasob(matice, matice, velikost);
+
+ int **maticeU = Zkopiruj(matice2, velikost);
+
+ int **maticeN = Sjednot(matice, matice2, velikost); 
+
+ int **maticeT = matice2;  //nahodna inicializace
+ int **maticeM = matice2;  //nahodna inicializace
+ int **maticeR = matice2;  //nahodna inicializace
+ int **maticeQ = matice2;  //nahodna inicializace
+
+ int i;
+ for(i=0; i<velikost-2; i++) {
+	maticeT = Zkopiruj(maticeU, velikost);
+	maticeR = Vynasob(matice, maticeT, velikost);
+	maticeM = Sjednot(maticeN, maticeR, velikost);
+	Uvolni(maticeU, velikost);
+	Uvolni(maticeN, velikost);
+	Uvolni(maticeT, velikost);
+	maticeU = maticeR;
+	maticeN = maticeM;
+}
+
+ printf("\n");
+ Vypis(maticeM, velikost);
+
+ Uvolni(matice, velikost);
+ Uvolni(matice2, velikost);
+ Uvolni(maticeU, velikost);
+ Uvolni(maticeN, velikost);  
   
 }

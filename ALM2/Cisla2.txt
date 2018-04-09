@@ -1,0 +1,5 @@
+
+int Cisla[]={ 5,98,22,61,43,3,17,25,86,51,54,53,52,99,75,73,78,71,60,84,31,35,33,38,7 };
+
+const unsigned Pocet=sizeof Cisla/sizeof *Cisla;
+  
